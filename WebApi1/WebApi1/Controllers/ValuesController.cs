@@ -14,7 +14,7 @@ namespace WebApp1.Controllers
         public IEnumerable<string> Get()
         {
 
-            using (SqlConnection conn = new SqlConnection("Data Source=sc-y-db-bms-1;Initial Catalog=OMSDEV3;Integrated Security=true;Connection Timeout=60"))
+            using (SqlConnection conn = new SqlConnection("Data Source=ansibledbrashmi01;Initial Catalog=sqlrashmitestdb01;User Id=rashmisa;Password=Test@123;Connection Timeout=60"))
             {
                 conn.Open();
 
@@ -37,7 +37,7 @@ namespace WebApp1.Controllers
         // POST api/values
         public void Post(string value)
         {
-            using (SqlConnection conn = new SqlConnection("Data Source=sc-y-db-bms-1;Initial Catalog=OMSDEV3;Integrated Security=true;Connection Timeout=60"))
+            using (SqlConnection conn = new SqlConnection("Data Source=ansibledbrashmi01;Initial Catalog=sqlrashmitestdb01;User Id=rashmisa;Password=Test@123;Connection Timeout=60"))
             {
                 conn.Open();
 
